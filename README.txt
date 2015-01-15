@@ -1,0 +1,1 @@
+doc/korin_vim_settings.txt

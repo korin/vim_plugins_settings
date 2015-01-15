@@ -1,3 +1,19 @@
+*korin_vim_settings.txt*  Plugin that contains the configuration of other plugins I use.
+
+Author:  Rafał Lisowski <http://rubygun.pl/>
+License: MIT (see |license|)
+
+INTRODUCTION                                    *korin_vim_settings*
+ _              _               _                      _   _   _
+| |            (_)             (_)                    | | | | (_)
+| | _____  _ __ _ _ __   __   ___ _ __ ___    ___  ___| |_| |_ _ _ __   __ _ ___
+| |/ / _ \| '__| | '_ \  \ \ / / | '_ ` _ \  / __|/ _ \ __| __| | '_ \ / _` / __|
+|   < (_) | |  | | | | |  \ V /| | | | | | | \__ \  __/ |_| |_| | | | | (_| \__ \
+|_|\_\___/|_|  |_|_| |_|   \_/ |_|_| |_| |_| |___/\___|\__|\__|_|_| |_|\__, |___/
+                                                                        __/ |
+                                                                       |___/
+
+LICENSE                                         *license*
 The MIT License (MIT)
 
 Copyright (c) 2015 Rafał Lisowski
