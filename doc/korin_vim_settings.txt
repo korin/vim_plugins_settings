@@ -1,9 +1,9 @@
-*korin_vim_settings.txt*  Plugin that contains the configuration of other plugins I use.
+*vim_plugins_settings.txt*  Plugin that contains the configuration of other plugins I use.
 
 Author:  Rafał Lisowski <http://rubygun.pl/>
 License: MIT (see |license|)
 
-INTRODUCTION                                    *korin_vim_settings*
+INTRODUCTION                                    *vim_plugins_settings*
 
            __            _                         __  __  _                  ~
     ____  / /_  ______ _(_)___  _____   ________  / /_/ /_(_)___  ____ ______ ~
