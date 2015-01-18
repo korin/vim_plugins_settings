@@ -1,1 +1,1 @@
-doc/korin_vim_settings.txt
+doc/vim_plugins_settings.txt
