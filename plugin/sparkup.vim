@@ -1,3 +1,3 @@
 " remap
-let g:sparkup = 'bundle/sparkup/sparkup.py'
+let g:sparkup = 'plugged/sparkup/sparkup.py'
 let g:sparkupNextMapping = '<c-x>'
