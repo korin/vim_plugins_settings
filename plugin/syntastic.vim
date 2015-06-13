@@ -11,8 +11,11 @@ let g:syntastic_loc_list_height=2
 " let g:syntastic_mode_map = { 'mode': 'active',
 "       \ 'active_filetypes': ['ruby'],
 "       \ 'passive_filetypes': ['javascript'] }
-" change symbols
-" let g:syntastic_error_symbol='✗'
-" let g:syntastic_warning_symbol='⚠'
 
-" let g:syntastic_ruby_checkers=['mri','rubylint','rubocop']
+" change symbols
+let g:syntastic_error_symbol='!'
+let g:syntastic_warning_symbol='!'
+
+" Set checkers
+let g:syntastic_ruby_checkers=['mri','rubylint','rubocop']
+let g:syntastic_javascript_checkers = ['standard']
