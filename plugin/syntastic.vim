@@ -19,5 +19,5 @@ let g:syntastic_error_symbol='!'
 let g:syntastic_style_warning_symbol='¡'
 
 " Set checkers
-let g:syntastic_ruby_checkers=['mri','rubylint','rubocop']
+let g:syntastic_ruby_checkers=['mri','rubocop'] " ,'rubylint'
 let g:syntastic_javascript_checkers = ['standard']
