@@ -12,6 +12,9 @@ let g:syntastic_style_error_symbol = '⁉️'
 let g:syntastic_warning_symbol = '⚠️'
 let g:syntastic_style_warning_symbol = '💩'
 
+let g:syntastic_quiet_messages = {}
+let g:syntastic_javascript_checkers = ['jshint']
+
 highlight link SyntasticErrorSign SignColumn
 highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
