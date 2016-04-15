@@ -8,3 +8,4 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn|rsync_cache)|node_modules$',
   \ 'file': '\v\.(exe|so|dll)$'
   \ }
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
