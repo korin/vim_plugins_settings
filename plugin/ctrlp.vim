@@ -9,3 +9,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$'
   \ }
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+if has("gui_macvim")
+  nmap <D-P> :CtrlP<CR>
+  nmap <D-p> :CtrlP<CR>
+endif
