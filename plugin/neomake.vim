@@ -1,1 +1,3 @@
-autocmd BufWritePost,BufEnter * Neomake
+if has('nvim')
+  autocmd BufWritePost,BufEnter * Neomake
+endif
