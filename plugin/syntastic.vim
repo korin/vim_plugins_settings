@@ -19,7 +19,9 @@ let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 let g:syntastic_ruby_checkers = ['mri', 'rubocop', 'reek']
 
+highlight link SyntasticError SpellBad
 highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarning SpellCap
 highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
