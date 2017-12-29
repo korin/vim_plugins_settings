@@ -1,8 +1,4 @@
-if has('nvim')
-  let test#strategy = "neovim"
-else
-  let test#strategy = "dispatch"
-endif
+let test#strategy = "asyncrun"
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>a :TestSuite<CR>
