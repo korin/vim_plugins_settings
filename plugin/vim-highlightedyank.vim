@@ -1,1 +1,3 @@
-map y <Plug>(highlightedyank)
+if !has('nvim')
+  map y <Plug>(highlightedyank)
+endif
