@@ -42,6 +42,12 @@ let g:easy_align_delimiters = {
 \     'left_margin':   0,
 \     'right_margin':  1,
 \     'stick_to_left': 1
+\   },
+\ ';': {
+\     'pattern':      ';',
+\     'left_margin':   1,
+\     'right_margin':  1,
+\     'stick_to_left': 0
 \   }
 \ }
 
