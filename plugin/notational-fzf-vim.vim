@@ -1,3 +1,3 @@
-let g:nv_search_paths = ['~/notes', './docs', './README.md', '../README.md', './*/README.md']
+let g:nv_search_paths = ['~/Documents/Notes', './docs' , './notes.md', './README.md', './README.markdown']
 
 nnoremap <silent> <c-s> :NV<CR>
