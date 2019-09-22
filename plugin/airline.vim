@@ -23,6 +23,10 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
+let g:airline#extensions#neomake#enabled = 1
+let airline#extensions#neomake#error_symbol = '✖:'
+let airline#extensions#neomake#warning_symbol = '!:'
+
 let g:airline_skip_empty_sections = 1
 
 let g:airline#extensions#default#section_truncate_width = {
