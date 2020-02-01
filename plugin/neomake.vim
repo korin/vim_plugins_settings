@@ -1,5 +1,5 @@
-let g:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
-let g:neomake_typescript_enabled_makers = ['tslint']
+" let g:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
+let g:neomake_typescript_enabled_makers = ['eslint', 'tslint']
 
 autocmd BufWritePost,BufEnter * Neomake
 " autocmd User NeomakeJobFinished echom printf('%s exited with %d', g:neomake_hook_context.jobinfo.maker.name, g:neomake_hook_context.jobinfo.exit_code)
