@@ -5,6 +5,6 @@
 
 nmap <silent> <C-space> :<C-u>FzfPreviewBuffers<CR>
 nmap <silent> <C-p> :<C-u>FzfPreviewProjectFiles<CR>
-nmap <silent> <C-f> :<C-u>FzfPreviewProjectGrep <C-R><C-W><CR>
+nmap <silent> <C-f> :call fzf_preview#fzf_project_grep(expand('<cword>'))<CR>
 
 let g:fzf_preview_filelist_command = 'rg --files --ignore-vcs --hidden --column --line-number --no-heading --smart-case --follow --glob "!.git/*"'
