@@ -1,5 +1,5 @@
-hi link CtrlSpaceSearch IncSearch
+" hi link CtrlSpaceSearch IncSearch
 
-if  has('nvim')
-  let g:CtrlSpaceDefaultMappingKey = "<C-space> "
-endif
+" if  has('nvim')
+"   let g:CtrlSpaceDefaultMappingKey = "<C-space> "
+" endif

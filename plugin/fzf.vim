@@ -1,3 +1,5 @@
+finish
+
 " Mapping selecting mappings
 " nmap <C-f> :call fzf#vim#files('', fzf#vim#with_preview('right:60%'))<CR>
 nnoremap <C-f> :Rg <C-R><C-W><CR>
