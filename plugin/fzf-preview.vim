@@ -7,7 +7,7 @@ let g:fzf_preview_filelist_command = 'rg --files --ignore-vcs --hidden --column 
 
 function! s:buffers_delete_from_paths(paths) abort
   for path in a:paths
-    execute 'Bdelete! ' . path
+    execute 'Bdelete ' . path
   endfor
 endfunction
 

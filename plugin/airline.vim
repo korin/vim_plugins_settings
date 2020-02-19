@@ -17,6 +17,8 @@ let g:airline_symbols.spell = 'Ꞩ'
 let g:airline_symbols.whitespace = 'Ξ'
 
 let g:airline_powerline_fonts = 1
+let g:airline_theme='codeschool'
+let g:airline_exclude_preview = 1
 
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#left_sep = ' '
