@@ -7,4 +7,4 @@ let g:coc_explorer_global_presets = {
 \   }
 \ }
 
-nmap <C-\> :CocCommand explorer --preset floating<CR>
+" nmap <C-\> :CocCommand explorer --preset floating<CR>
