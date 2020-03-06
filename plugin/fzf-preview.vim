@@ -1,14 +1,20 @@
 let g:fzf_preview_filelist_command = 'rg --files --ignore-vcs --hidden --column --line-number --no-heading --smart-case --follow --glob "!.git/*"'
 let g:fzf_preview_floating_window_winblend = 0
 
-function! s:buffers_delete_from_paths(paths) abort
-  for path in a:paths
-    execute 'Bdelete ' . path
+function! s:buffers_delete_from_lines(lines) abort
+  for line in a:lines
+    let matches = matchlist(line, '^buffer \(\d\+\)$')
+
+    if len(matches) >= 1
+      execute 'silent Bdelete ' . matches[1]
+    else
+      execute 'silent Bdelete ' . line
+    endif
   endfor
 endfunction
 
 let g:fzf_preview_buffer_delete_processors = fzf_preview#resource_processor#get_default_processors()
-let g:fzf_preview_buffer_delete_processors['ctrl-d'] = function('s:buffers_delete_from_paths')
+let g:fzf_preview_buffer_delete_processors['ctrl-d'] = function('s:buffers_delete_from_lines')
 
 nmap <silent> <C-space> :<C-u>FzfPreviewBuffers -processors=g:fzf_preview_buffer_delete_processors<CR>
 nmap <silent> <C-p> :<C-u>FzfPreviewProjectFiles<CR>
