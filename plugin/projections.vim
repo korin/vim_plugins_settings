@@ -14,7 +14,33 @@ let g:rails_projections = {
       \       "RSpec.describe {camelcase|capitalize|colons} do",
       \       "end" ],
       \   },
+      \  "app/controllers/*_controller.rb": {
+      \      "test": [
+      \        "spec/requests/{}_spec.rb",
+      \        "spec/requests/{}_request_spec.rb",
+      \        "spec/controllers/{}_controller_spec.rb",
+      \        "test/controllers/{}_controller_test.rb"
+      \      ],
+      \      "alternate": [
+      \        "spec/requests/{}_spec.rb",
+      \        "spec/requests/{}_request_spec.rb",
+      \        "spec/controllers/{}_controller_spec.rb",
+      \        "test/controllers/{}_controller_test.rb"
+      \      ],
+      \   },
+      \   "spec/requests/*_request_spec.rb": {
+      \      "command": "request",
+      \      "type": "test",
+      \      "alternate": "app/controllers/{}_controller.rb",
+      \      "template": "require 'rails_helper'\n\n" .
+      \        "RSpec.describe '{}' do\nend",
+      \   },
       \   "spec/requests/*_spec.rb": {
-      \     "type": "test"
-      \   }}
+      \      "command": "request",
+      \      "type": "test",
+      \      "alternate": "app/controllers/{}_controller.rb",
+      \      "template": "require 'rails_helper'\n\n" .
+      \        "RSpec.describe '{}' do\nend",
+      \   }
+      \ }
 
