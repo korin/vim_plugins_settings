@@ -13,9 +13,22 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
+local lspkind_status_ok, lspkind = pcall(require, "lspkind")
+if not lspkind_status_ok then
+  return
+end
+
 cmp.setup {
   formatting = {
     fields = { "abbr", "kind", "menu" },
+    format = function (entry, vim_item)
+      if entry.source.name == "copilot" then
+        vim_item.kind = ""
+        vim_item.kind_hl_group = "CmpItemKindCopilot"
+        return vim_item
+      end
+      return lspkind.cmp_format({ mode = 'symbol', maxwidth = 50 })(entry, vim_item)
+    end
   },
   snippet = {
     expand = function(args)

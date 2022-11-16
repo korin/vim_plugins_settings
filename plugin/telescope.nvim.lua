@@ -1,4 +1,3 @@
-lua << EOF
 local actions = require('telescope.actions')
 
 require('telescope').setup{
@@ -65,16 +64,20 @@ require("telescope").load_extension("file_browser")
 -- ivy_theme['layout_config']['height'] = 0.5
 --
 -- vim.api.nvim_set_keymap('n', '<C-p>', ':lua require('telescope.builtin').find_files(ivy_theme)<cr>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap(
-  "n",
-  "<space>fb",
-  ":Telescope file_browser",
-  { noremap = true }
-)
-EOF
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<space>fb",
+--   ":Telescope file_browser",
+--   { noremap = true }
+-- )
 
-nnoremap <C-p>      <cmd>lua require('telescope.builtin').find_files({ debounce = 100 } )<cr>
-nnoremap <C-f>      <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <C-space>  <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <Leader>j  <cmd>lua require('telescope.builtin').current_buffer_tags()<cr>
-nnoremap <Leader>b  <cmd>lua require('telescope.builtin').marks()<cr>
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
+vim.keymap.set('n', '<C-Space>', builtin.buffers, {})
+
+-- nnoremap <C-p>      <cmd>lua require('telescope.builtin').find_files({ debounce = 100 } )<cr>
+-- nnoremap <C-f>      <cmd>lua require('telescope.builtin').live_grep()<cr>
+-- nnoremap <C-space>  <cmd>lua require('telescope.builtin').buffers()<cr>
+-- nnoremap <Leader>j  <cmd>lua require('telescope.builtin').current_buffer_tags()<cr>
+-- nnoremap <Leader>b  <cmd>lua require('telescope.builtin').marks()<cr>
