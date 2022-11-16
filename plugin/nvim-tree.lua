@@ -1,7 +1,6 @@
 require('nvim-tree').setup {
   disable_netrw       = true,
   hijack_netrw        = true,
-  auto_close          = true,
   open_on_setup       = false,
   update_focused_file = {
     enable            = true
