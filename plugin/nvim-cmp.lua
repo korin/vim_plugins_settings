@@ -28,7 +28,7 @@ cmp.setup {
     fields = { "abbr", "kind", "menu" },
     format = function (entry, vim_item)
       if entry.source.name == "copilot" then
-        vim_item.kind = ""
+        vim_item.kind = ""
         vim_item.kind_hl_group = "CmpItemKindCopilot"
         return vim_item
       end
