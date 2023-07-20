@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  highlight = {
+  Highlight = {
     enable = true
   },
   context_commentstring = {
