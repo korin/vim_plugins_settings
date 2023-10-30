@@ -29,7 +29,7 @@ require('telescope').setup{
       height = 0.98,
       width = 0.98,
     },
-    file_ignore_patterns = {".git/*"},
+    file_ignore_patterns = {".git/*", "node_modules", "vendor"},
     winblend = 0,
     border = {},
     borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' },
