@@ -1,4 +1,8 @@
-require("lspsaga").setup({})
+require("lspsaga").setup({
+  lightbulb = {
+    enable = false
+  }
+})
 
 local keymap = vim.keymap.set
 
